@@ -1,4 +1,0 @@
-FROM openjdk:8-jre-stretch
-COPY xmppClient.jar  /
-# argument list: serverIP username pw
-ENTRYPOINT java -jar /xmppClient.jar localhost pip piip
