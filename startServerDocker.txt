@@ -1,0 +1,18 @@
+# image already downloaded locally (name: sameersbn/openfire:3.10.3-19)
+
+docker run --name openfire -d --restart=always  --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 gizmotronic/openfire:4.2.3
+!! bekannter !!
+docker run --name openfire -d --restart=always \
+  --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 \
+  --volume /srv/docker/openfire:/var/lib/openfire \
+  gizmotronic/openfire:4.2.3
+
+!! gizmotronic +100k downloads !!
+
+docker run --name openfire -d --restart=always \
+  --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 \
+  # only if loggs needed.. --volume /srv/docker/openfire:/var/lib/openfire \
+  sameersbn/openfire:3.10.3-19
+
+
+Nutzer müssen dann über einen Browser (localhost:9090) angelegt werden.
