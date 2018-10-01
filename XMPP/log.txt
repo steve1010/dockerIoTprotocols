@@ -1,0 +1,68 @@
+
+
+
+---success login ---
+
+01:18:42 PM SENT (0): <stream:stream xmlns='jabber:client' to='localhost' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' from='pip@localhost' xml:lang='en'>
+01:18:42 PM RECV (0): <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="steve" id="122eqczaly" xml:lang="en" version="1.0">
+01:18:42 PM RECV (0): <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>SCRAM-SHA-1</mechanism><mechanism>CRAM-MD5</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><ver xmlns="urn:xmpp:features:rosterver"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+01:18:42 PM SENT (0): <auth xmlns='urn:ietf:params:xml:ns:xmpp-sasl' mechanism='SCRAM-SHA-1'>biwsbj1waXAscj1nP0FOdUQgdWtlTkteSnx+Y1s7bHtsIG5Wc1dHJHRvKg==</auth>
+01:18:42 PM RECV (0): <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cj1nP0FOdUQgdWtlTkteSnx+Y1s7bHtsIG5Wc1dHJHRvKmI0Y2RiMjVjLWRhMzItNGU1ZC1hZjljLWNmNDQ2N2VhNjEwZCxzPWlHeHpJVlR1N3Fra1hHYzJIdDhXQWUrODBQb3EwWGNQLGk9NDA5Ng==</challenge>
+01:18:43 PM SENT (0): <response xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>Yz1iaXdzLHI9Zz9BTnVEIHVrZU5LXkp8fmNbO2x7bCBuVnNXRyR0bypiNGNkYjI1Yy1kYTMyLTRlNWQtYWY5Yy1jZjQ0NjdlYTYxMGQscD0rK3Q3OTdHdmVHblNJTVhCY3Vod2JzSXhKWms9</response>
+01:18:43 PM RECV (0): <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl">dj1HRDRDTWxjb0tycnJTVkVXRzBFL2JnV0lmdnM9</success>
+01:18:43 PM SENT (0): <stream:stream xmlns='jabber:client' to='localhost' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' from='pip@localhost' id='122eqczaly' xml:lang='en'>
+01:18:43 PM RECV (0): <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="steve" id="122eqczaly" xml:lang="en" version="1.0"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><ver xmlns="urn:xmpp:features:rosterver"/><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"><optional/></session><sm xmlns='urn:xmpp:sm:2'/><sm xmlns='urn:xmpp:sm:3'/></stream:features>
+01:18:43 PM SENT (0): <iq id='pUKl1-3' type='set'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><resource>Smack</resource></bind></iq>
+01:18:43 PM RECV (0): <iq type="result" id="pUKl1-3" to="steve/122eqczaly"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>pip@steve/Smack</jid></bind></iq>
+01:18:43 PM User logged (0): pip@steve:5222/Smack
+01:18:43 PM XMPPConnection authenticated (0)
+01:18:43 PM SENT (0): <iq id='pUKl1-5' type='get'><query xmlns='jabber:iq:roster'></query></iq>
+
+
+0 buddy(ies):
+Who do you want to talk to? - Type contacts full email address:
+01:18:43 PM SENT (0): <presence id='pUKl1-6'><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.igniterealtime.org/projects/smack' ver='NfJ3flI83zSdUDzCEICtbypursw='/></presence>
+01:18:43 PM RECV (0): <iq type="result" id="pUKl1-5" to="pip@steve/Smack"><query xmlns="jabber:iq:roster" ver="110999"/></iq>
+01:18:43 PM RECV (0): <iq type="get" id="836-3" to="pip@steve/Smack" from="steve"><query xmlns="http://jabber.org/protocol/disco#info"/></iq>
+01:18:43 PM SENT (0): <iq to='steve' id='836-3' type='result'><query xmlns='http://jabber.org/protocol/disco#info'><identity category='client' name='Smack' type='pc'/><feature var='http://jabber.org/protocol/disco#items'/><feature var='http://jabber.org/protocol/caps'/><feature var='vcard-temp'/><feature var='http://jabber.org/protocol/bytestreams'/><feature var='http://jabber.org/protocol/xhtml-im'/><feature var='jabber:x:data'/><feature var='jabber:iq:version'/><feature var='urn:xmpp:time'/><feature var='jabber:iq:privacy'/><feature var='urn:xmpp:ping'/><feature var='jabber:iq:last'/><feature var='http://jabber.org/protocol/commands'/><feature var='http://jabber.org/protocol/muc'/><feature var='http://jabber.org/protocol/xdata-validate'/><feature var='http://jabber.org/protocol/xdata-layout'/><feature var='urn:xmpp:receipts'/><feature var='http://jabber.org/protocol/disco#info'/></query></iq>
+01:21:43 PM RECV (0): <iq type="get" id="382-7" from="steve" to="pip@steve/Smack"><ping xmlns="urn:xmpp:ping"/></iq>
+01:21:43 PM SENT (0): <iq to='steve' id='382-7' type='result'></iq>
+  
+ ---- / success login ----
+
+
+---- failure login ----
+
+"C:\Program Files\Java\jdk1.8.0_181\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.3\lib\idea_rt.jar=53873:C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\$workspace\Java\xmppImpl\target\classes;C:\Users\-steve-\.m2\repository\org\igniterealtime\smack\smack-java7\4.1.5\smack-java7-4.1.5.jar;C:\Users\-steve-\.m2\repository\org\igniterealtime\smack\smack-resolver-javax\4.1.5\smack-resolver-javax-4.1.5.jar;C:\Users\-steve-\.m2\repository\org\igniterealtime\smack\smack-sasl-javax\4.1.5\smack-sasl-javax-4.1.5.jar;C:\Users\-steve-\.m2\repository\org\igniterealtime\smack\smack-core\4.1.5\smack-core-4.1.5.jar;C:\Users\-steve-\.m2\repository\org\jxmpp\jxmpp-core\0.4.2\jxmpp-core-0.4.2.jar;C:\Users\-steve-\.m2\repository\org\jxmpp\jxmpp-util-cache\0.4.2\jxmpp-util-cache-0.4.2.jar;C:\Users\-steve-\.m2\repository\xpp3\xpp3\1.1.4c\xpp3-1.1.4c.jar;C:\Users\-steve-\.m2\repository\org\igniterealtime\smack\smack-im\4.1.5\smack-im-4.1.5.jar;C:\Users\-steve-\.m2\repository\org\igniterealtime\smack\smack-extensions\4.1.5\smack-extensions-4.1.5.jar;C:\Users\-steve-\.m2\repository\org\igniterealtime\smack\smack-tcp\4.1.5\smack-tcp-4.1.5.jar" app.Client localhost pip piip
+01:16:07 PM SENT (0): <stream:stream xmlns='jabber:client' to='localhost' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' from='pip@localhost' xml:lang='en'>
+01:16:08 PM RECV (0): <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="steve" id="7zqj6ntr5a" xml:lang="en" version="1.0">
+01:16:08 PM RECV (0): <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>SCRAM-SHA-1</mechanism><mechanism>CRAM-MD5</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><ver xmlns="urn:xmpp:features:rosterver"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+01:16:08 PM SENT (0): <auth xmlns='urn:ietf:params:xml:ns:xmpp-sasl' mechanism='SCRAM-SHA-1'>biwsbj1waXAscj1AOHFSOlEpOSU6IENTX3B4aSNTVykzUiNeK2p7dy8iPg==</auth>
+01:16:08 PM RECV (0): <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cj1AOHFSOlEpOSU6IENTX3B4aSNTVykzUiNeK2p7dy8iPjFmNzJkMGU2LTE0NGYtNGEyZC1hZmRlLTZkMjY2MzQ4NTM3MSxzPVRHMjhEZU1GOUFnQlRUUFpkdVJFbjM0YzB1aE13bXI0LGk9NDA5Ng==</challenge>
+01:16:10 PM SENT (0): <response xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>Yz1iaXdzLHI9QDhxUjpRKTklOiBDU19weGkjU1cpM1IjXitqe3cvIj4xZjcyZDBlNi0xNDRmLTRhMmQtYWZkZS02ZDI2NjM0ODUzNzEscD11cWxEdW1GWXM2OEtDWEZBckkrbFhSeDcxVE09</response>
+01:16:10 PM RECV (0): <failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure>
+org.jivesoftware.smack.sasl.SASLErrorException: SASLError using SCRAM-SHA-1: not-authorized
+	at org.jivesoftware.smack.SASLAuthentication.authenticationFailed(SASLAuthentication.java:365)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:1040)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$300(XMPPTCPConnection.java:944)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:959)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+0 buddy(ies):
+Who do you want to talk to? - Type contacts full email address:
+01:19:10 PM RECV (0): <iq type="get" id="782-4" from="steve" to="steve/7zqj6ntr5a"><ping xmlns="urn:xmpp:ping"/></iq>
+01:19:10 PM SENT (0): <iq to='steve' id='782-4' type='result'></iq>
+01:22:10 PM RECV (0): <iq type="get" id="238-8" from="steve" to="steve/7zqj6ntr5a"><ping xmlns="urn:xmpp:ping"/></iq>
+01:22:10 PM SENT (0): <iq to='steve' id='238-8' type='result'></iq>
+
+----- / failure login ----
+
+
+--- messaging  example ----
+
+01:30:42 PM SENT (0): <message to='pip@steve' id='pAE64-8' type='chat'><body>is anybody there?</body><thread>4cdefcdb-fdac-4621-999b-6a629b00c587</thread></message>
+01:31:09 PM RECV (0): <message to="piip@steve" id="3sb26-9" type="chat" from="pip@steve/Smack"><body>yes it works</body><thread>66f5367d-cdcb-470b-92da-02d29cd2ca71</thread></message>
+
+
+---------------------------------------------------------------------------------------
